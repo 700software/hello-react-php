@@ -1,0 +1,5 @@
+Options +FollowSymLinks
+RewriteEngine on
+RewriteRule ^add$ index.html [L]
+RewriteRule ^\d+$ index.html [L]
+RewriteRule ^\d+/edit$ index.html [L]

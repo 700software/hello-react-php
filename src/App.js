@@ -277,7 +277,7 @@ class PageListing extends Component {
 
     elements.push(<Link to="/add" className="button" style={{float:'right'}}><span class="material-icons">add</span> Add Article</Link>)
 
-    elements.push(<h2 style={{marginBottom:'.2em'}}>Here's all the articles{this.state.currentLetter == null ? "" : this.state.currentLetter == '#' ? "starting with a number or special character" : " starting with " + this.state.currentLetter}!</h2>)
+    elements.push(<h2 style={{marginBottom:'.2em'}}>Here's all the articles{this.state.currentLetter == null ? "" : this.state.currentLetter == '#' ? " starting with a number or special character" : " starting with " + this.state.currentLetter}!</h2>)
 
     if (this.state.whoops)
       elements.push(<b class="red">{ this.state.whoops }</b>)
